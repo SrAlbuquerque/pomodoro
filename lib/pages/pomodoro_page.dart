@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pomodoro/components/cronometro.dart';
-import 'package:pomodoro/components/entrada_tempo.dart';
+import 'package:pomodoro/components/timer.dart';
+import 'package:pomodoro/components/input_timer.dart';
 
 class PomodoroPage extends StatelessWidget {
   const PomodoroPage({Key? key}) : super(key: key);
@@ -12,20 +12,20 @@ class PomodoroPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Expanded(
-            child: Cronometro(),
+            child: Timer(),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 40),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: const [
-                EntradaTempo(
-                  titulo: 'Trabalho',
-                  valor: 50,
+                InputTimer(
+                  title: 'Trabalho',
+                  value: 50,
                 ),
-                EntradaTempo(
-                  titulo: 'Descanso',
-                  valor: 5,
+                InputTimer(
+                  title: 'Descanso',
+                  value: 5,
                 )
               ],
             ),

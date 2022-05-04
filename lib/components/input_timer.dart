@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class EntradaTempo extends StatelessWidget {
-  final String titulo;
-  final int valor;
+class InputTimer extends StatelessWidget {
+  final String title;
+  final int value;
 
-  const EntradaTempo({
+  const InputTimer({
     Key? key,
-    required this.titulo,
-    required this.valor,
+    required this.title,
+    required this.value,
   }) : super(key: key);
 
   @override
@@ -15,7 +15,7 @@ class EntradaTempo extends StatelessWidget {
     return Column(
       children: [
         Text(
-          titulo,
+          title,
           style: const TextStyle(
             fontSize: 25,
           ),
@@ -36,7 +36,7 @@ class EntradaTempo extends StatelessWidget {
               ),
             ),
             Text(
-              '$valor min',
+              '$value min',
               style: const TextStyle(
                 fontSize: 18,
               ),
